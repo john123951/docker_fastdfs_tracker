@@ -36,4 +36,3 @@ EXPOSE 22122
 
 CMD ["/bin/bash", "-c", "fdfs_trackerd /etc/fdfs/tracker.conf start && sleep 5 && tail -F --pid=`cat /var/fastdfs/data/fdfs_trackerd.pid` /dev/null"]
 
-
